@@ -89,6 +89,7 @@ input:focus {
     left: 50%;
     bottom: 30px;
     transform: translate(-50%, 0);
+    cursor: pointer;
 
 }
 
