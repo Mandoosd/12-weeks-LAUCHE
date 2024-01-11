@@ -905,6 +905,10 @@ input:focus {
     overflow: hidden;
 }
 
+.main_tab .tab_wrap .left .tab_content figure::before {
+
+}
+
 
 
 .main_tab .tab_wrap .left .tab_content p {
@@ -926,11 +930,14 @@ input:focus {
 
 
 
+
 .main_tab .tab_wrap .left p {}
 
 
 
 .main_tab .tab_wrap .right .tab_menu li {
+    display: flex;
+    justify-content: space-between;
     width: 40vw;
     text-align: left;
     padding: 0 0 24px 0;
@@ -939,7 +946,7 @@ input:focus {
     transition: 0.3s;
 }
 
-.main_tab .tab_wrap .right .tab_menu li.on>* {
+.main_tab .tab_wrap .right .tab_menu li.on {
     color: #fff;
 }
 
@@ -967,6 +974,24 @@ input:focus {
 .main_tab .tab_wrap .right .tab_menu strong {
     font-size: 32px;
 }
+
+.main_tab .tab_wrap .right .tab_menu .shop {
+    color: #666;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.main_tab .tab_wrap .right .tab_menu .shop span {
+    font-size: 40px;
+z-index: 999;
+}
+
+.main_tab .tab_wrap .right .tab_menu .shop:hover {
+    color: #fff;
+}
+
+
+
 
 @media (max-width: 768px) {
     .main_tab {
@@ -1115,6 +1140,7 @@ input:focus {
 
     .main_tab .tab_wrap .see_more {
         display: block;
+        margin: 40px 0 0 0;
     }
 
     .main_tab .tab_wrap .see_more strong {
@@ -1295,6 +1321,78 @@ input:focus {
         border-top: 1px solid rgba(255, 255, 255, 0.15);
     }
 }
+
+
+
+
+/* sub */
+
+.itm_grid {
+    background: #000;
+    padding: 0 0 80px 0;
+
+}
+
+.family {
+    background: #000;
+    padding: 80px 0 0 0;
+}
+
+.family_wrap h2 {
+    margin: 0 0 40px 0;
+}
+
+
+.family_wrap #lnk {
+    font-size: 20px;
+    outline: none;
+    margin: 0 0 40px;
+
+    background: #000;
+    color: #fff;
+}
+
+.family_wrap #lnk {
+    outline: none;
+    border: 1px solid #d8d8d8;
+    color: #fff;
+}
+
+.itm_grid .grid_wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(400px, 1fr));
+
+    gap: 30px;
+}
+
+.itm_grid .grid_wrap .itm {}
+
+
+.itm_grid .grid_wrap .itm figure{
+    margin: 0 0 8px 0;
+}
+
+.itm_grid .grid_wrap .itm p {
+    color: #fff;
+}
+
+.itm_grid  .none {
+    position: relative;
+    height: 600px;
+}
+
+.itm_grid  .none strong {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+
+color: #fff;
+}
+
+
+
+
 
 .footer {
     padding: 40px 0 80px 0;

@@ -21,7 +21,7 @@ $(function () {
     });
 
 
-    $('.tab_menu li a').on('click', function (e) {
+    $('.tab_menu li .menu_txt').on('click', function (e) {
         e.preventDefault();
         const idx = ($(this).parent().index())
         console.log(idx);//0, 1, 2
@@ -41,6 +41,8 @@ $(function () {
         $('html,body').animate({ scrollTop: H - 50 }, 300)
     })
     // width 변경시 값 변경필요
+
+
 });
 
 

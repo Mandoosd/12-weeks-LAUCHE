@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/custom.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        <section class="family">
+            <div class="family_wrap inner">
+                <h2>PRODUCT</h2>
+                <div class="lnk">
+                    <select name="lnk" id="lnk">
+                        <option value="./m02.html">유가</option>
+                        <option value="./m01.html">라우체 타일</option>
+                    <option value="./m03.html">세면대</option>
+                    <option value="./m04.html">양변기</option>
+                    <option value="./m05.html">수전</option>
+                    <option value="./m06.html">액세사리</option>
+                    <option value="./m07.html">부자재</option>
+                    <option value="./m08.html">스프레이건</option>
+                    <option value="./m09.html">욕조</option>
+                    <option value="./m10.html">욕실가구</option>
+                    </select>
+                    <script>
+                    $(function () {
+                        $('#lnk').on('change', function () {
+                            //console.log($(this).val());
+                            let lnk = $(this).val();
+                            lnk && window.open(lnk);
+                        })
+                    })
+                    </script>
+                </div>
+            </div>
+                
+        </section>
+        <section class="itm_grid">
+            <div class="grid_wrap inner">
+                <div class="itm">
+                    <a href=""><figure><img src="./images/m02_01.png" alt=""></figure>
+                    <p>J015H
+                    </p></a>
+                </div>
+                <div class="itm">
+                    <a href=""><figure><img src="./images/m02_02.png" alt=""></figure>
+                    <p>J015S
+                    </p></a>
+                </div>
+                <div class="itm">
+                    <a href=""><figure><img src="./images/m02_03.png" alt=""></figure>
+                    <p>J600SE / J800SE / J100SE
+                    </p></a>
+                </div>
+                <div class="itm">
+                    <a href=""><figure><img src="./images/m02_04.png" alt=""></figure>
+                    <p>J600SC / J800SC / J100SC
+                    </p></a>
+                </div>
+                <div class="itm">
+                    <a href=""><figure><img src="./images/m02_05.png" alt=""></figure>
+                    <p>J300HE / J600HE / J800HE / J100HE
+                    </p></a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
