@@ -40,3 +40,10 @@
     margin: 0 0 0 8px;
     vertical-align: 1px;
 }
+
+h2 {
+    font-size: 40px;
+    font-weight: 300;
+
+    color: #fff;
+}
